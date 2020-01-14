@@ -46,25 +46,21 @@ namespace PassordGenerator
         {
             string symbols = "!\"#%&/()=?\\@£${}[]";
             var randomIndex = Random.Next(0, symbols.Length);
-            //Console.WriteLine(symbols[randomIndex]);
             return symbols[randomIndex];
         }
 
         private static int WriteRandomDigit()
         {
-            //Console.WriteLine(Random.Next(0, 10));
             return Random.Next(0, 10);
         }
 
         private static char WriteRandomUpperCaseLetter()
         {
-            //Console.WriteLine(GetRandomLetter('A', 'Z'));
             return GetRandomLetter('A', 'Z');
         }
 
         private static char WriteRandomLowerCaseLetter()
         {
-            //Console.WriteLine(GetRandomLetter('a', 'z'));
             return GetRandomLetter('a', 'z');
         }
         static char GetRandomLetter(char min, char max)
