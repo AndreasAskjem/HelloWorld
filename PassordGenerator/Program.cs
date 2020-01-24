@@ -65,7 +65,7 @@ namespace PassordGenerator
         }
         static char GetRandomLetter(char min, char max)
         {
-            return (char) Random.Next(min, max);
+            return (char) Random.Next(min, max + 1);
         }
 
         private static bool IsValid(string[] args)
